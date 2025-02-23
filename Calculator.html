@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="stylesheet" href="design.css">
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+   <nav class="bg-slate-950 h-15 "><button class="text-2xl mt-3 w-20 rounded-xl font-bold bg-white text-black"><a href="js.html">back</a></button></nav> 
+   
+   <div class="w-100 h-100 border border-black mt-50 ml-130 bg-amber-100 pl-17">
+    <header class="text-3xl font-bold mt-6  flex justify-center pr-10">Calculator</header> 
+   <div class="pt-5"> <input type="number" id="num1" class="text-white bg-slate-700 rounded-2xl pl-7 w-70 h-10 border" placeholder="enter the number" ></div>
+    <div class="pt-5"><input type="number" id="num2"  class="text-white bg-slate-700 rounded-2xl pl-7 w-70 h-10 border" placeholder="enter the number"></div>
+<div class="h-30 w-50 border bg-white flex mt-15 ml-8 ">
+  <div>  <button  class="border ml-4 mt-6 w-15" onclick="Add()"><i class="fa-solid fa-plus"></i></button>
+<button   class="border mt-2 ml-4  w-15" onclick="SABTRACT()"><i class="fa-solid fa-minus"></i></button></div>
+<div><button   class="border mt-6  w-15"onclick="MULTIPLY()"><i class="fa-solid fa-xmark"></i></button>
+<button   class="border mt-2 w-15"onclick="DIVIDE()"><i class="fa-solid fa-divide"></i></button></div></div>
+
+<p id="result"></p>
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
